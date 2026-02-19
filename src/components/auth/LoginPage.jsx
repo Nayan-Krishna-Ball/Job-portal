@@ -14,7 +14,9 @@ export default function LoginMainPage() {
           </div>
           <div className="flex items-center gap-4">
             <span className="text-sm text-muted-foreground">
+
               Don't have an account please login?
+
             </span>
             <a href="register.html" className="btn btn-ghost text-sm">
               Sign Up
