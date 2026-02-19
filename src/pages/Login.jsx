@@ -1,4 +1,7 @@
 //
+
+import LoginMainPage from "../components/auth/LoginPage";
+
 export default function LoginPage() {
-  return <div> This is login Page</div>;
+  return <LoginMainPage />;
 }
