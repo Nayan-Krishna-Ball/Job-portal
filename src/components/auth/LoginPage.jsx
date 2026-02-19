@@ -1,5 +1,7 @@
 //
 export default function LoginMainPage() {
+  console.log("This is dummy log for check git marge confilt");
+
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
