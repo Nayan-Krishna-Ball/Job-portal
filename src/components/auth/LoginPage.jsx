@@ -1,5 +1,7 @@
 //
 export default function LoginMainPage() {
+  console.log("This is dummy log for check git marge confilt");
+
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -12,7 +14,7 @@ export default function LoginMainPage() {
           </div>
           <div className="flex items-center gap-4">
             <span className="text-sm text-muted-foreground">
-              Don't have an account?
+              Don't have an account please login?
             </span>
             <a href="register.html" className="btn btn-ghost text-sm">
               Sign Up
