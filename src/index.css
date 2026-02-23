@@ -50,6 +50,10 @@
     @apply hover:bg-[hsl(var(--color-accent))] hover:text-[hsl(var(--color-accent-foreground))];
     @apply h-10 px-4 py-2;
   }
+  .label {
+    @apply text-sm font-medium leading-none;
+    @apply peer-disabled:cursor-not-allowed peer-disabled:opacity-70;
+  }
 
   .card {
     @apply rounded-lg border border-[hsl(var(--color-border))];
@@ -86,6 +90,13 @@
 
   .skeleton {
     @apply animate-pulse bg-[hsl(var(--color-muted))] rounded-md;
+  }
+  .textarea {
+    @apply flex min-h-[80px] w-full rounded-md border border-[hsl(var(--color-input))];
+    @apply bg-[hsl(var(--color-background))] px-3 py-2 text-sm;
+    @apply placeholder:text-[hsl(var(--color-muted-foreground))];
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--color-ring))];
+    @apply disabled:cursor-not-allowed disabled:opacity-50;
   }
 }
 
