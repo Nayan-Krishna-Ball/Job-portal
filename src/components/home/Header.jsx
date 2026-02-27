@@ -1,9 +1,10 @@
 import { Briefcase, Building2, Plus } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../hooks/useAuth";
 
 export default function Header() {
-  const { user, logout } = useAuth();
+  const { user, setUser } = useAuth();
+
   const naivagate = useNavigate();
 
   const location = useLocation();
@@ -95,7 +96,7 @@ export default function Header() {
               </span>
               <button
                 onClick={() => {
-                  (logout(), naivagate("/"));
+                  (setUser({}), naivagate("/"));
                 }}
                 className="btn btn-ghost text-sm"
               >
@@ -103,6 +104,9 @@ export default function Header() {
               </button>
               <Link to="/post-job" className="btn btn-primary text-sm">
                 Post a Job
+              </Link>
+              <Link to="/profile" className="btn btn-primary text-sm">
+                Profile
               </Link>
             </>
           )}
@@ -126,7 +130,7 @@ export default function Header() {
                 </span>
                 <button
                   onClick={() => {
-                    (logout(), naivagate("/"));
+                    (setUser({}), naivagate("/"));
                   }}
                   className="btn btn-ghost text-sm"
                 >
